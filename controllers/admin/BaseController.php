@@ -91,6 +91,12 @@ abstract class BaseController extends \yeesoft\controllers\BaseController
      */
     public $updateView = 'update';
 
+    public function init()
+    {
+        $this->layout = Yii::$app->yee->dashboardLayout;
+        return parent::init();
+    }
+
     public function behaviors()
     {
         return ArrayHelper::merge(parent::behaviors(), [
