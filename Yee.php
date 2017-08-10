@@ -142,6 +142,8 @@ class Yee extends Component
         'padding' => 0
     ];
 
+    public $dashboardLayout = '@vendor/yeesoft/yii2-yee-core/views/layouts/admin/main.php';
+
     /**
      * User table alias.
      * 
